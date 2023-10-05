@@ -1102,6 +1102,13 @@ const scroll = ()=>{
     // GSAP Scroll Triggers
     scroll();
 });
+document.getElementById("cards").onmousemove = (e)=>{
+    for (const card of document.getElementsByClassName("card")){
+        const rect = card.getBoundingClientRect(), x = e.clientX - rect.left, y = e.clientY - rect.top;
+        card.style.setProperty("--mouse-x", `${x}px`);
+        card.style.setProperty("--mouse-y", `${y}px`);
+    }
+};
 
 },{"./utils":"72Dku","@studio-freight/lenis":"ggVJc","gsap":"fPSuC","gsap/ScrollTrigger":"7wnFk","splitting/dist/splitting.css":"3uR7n","splitting/dist/splitting-cells.css":"7jeGL","splitting":"77jB6","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"3uR7n":[function() {},{}],"7jeGL":[function() {},{}]},["j9r0q","ebWYT"], "ebWYT", "parcelRequire2041")
 
