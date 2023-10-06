@@ -731,8 +731,27 @@ main {
 	}
 }
 
-
-
-
+button{
+	padding: 25px 30px;
+	background-color: #050801;
+	color: #ffffff;
+	font-weight: bold;
+	border: none;
+	border-radius: 5px;
+	letter-spacing: 4px;
+	overflow: hidden;
+	transition: 0.5s;
+	cursor: pointer;
+  }
+  
+  button:hover{
+	  background: #d68521;
+	  color: #050801;
+	  box-shadow: 0 0 5px #d68521,
+				  0 0 25px #d68521,
+				  0 0 50px #d68521,
+				  0 0 200px #d68521;
+	   -webkit-box-reflect:below 1px linear-gradient(transparent, #0005);
+  }
 
 /*# sourceMappingURL=/base.98fd6c19.css.map */
