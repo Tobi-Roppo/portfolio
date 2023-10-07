@@ -9652,6 +9652,26 @@ document.querySelector("#popup-open-btn").addEventListener("click", function () 
 document.querySelector(".popup .popup-close-btn").addEventListener("click", function () {
   document.querySelector(".popup").classList.remove("active");
 });
+var modal = document.getElementById("myModal");
+var card = document.querySelector(".card");
+var closeBtn = document.querySelector(".close");
+
+// Open the modal when the card is clicked
+card.addEventListener("click", function () {
+  modal.style.display = "block";
+});
+
+// Close the modal when the close button is clicked
+closeBtn.addEventListener("click", function () {
+  modal.style.display = "none";
+});
+
+// Close the modal when the user clicks anywhere outside the modal content
+window.addEventListener("click", function (event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+});
 },{"./utils":"js/utils.js","@studio-freight/lenis":"../node_modules/@studio-freight/lenis/dist/lenis.mjs","gsap":"../node_modules/gsap/index.js","gsap/ScrollTrigger":"../node_modules/gsap/ScrollTrigger.js","splitting/dist/splitting.css":"../node_modules/splitting/dist/splitting.css","splitting/dist/splitting-cells.css":"../node_modules/splitting/dist/splitting-cells.css","splitting":"../node_modules/splitting/dist/splitting.js"}],"../node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
@@ -9677,7 +9697,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "53942" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "51134" + '/');
   ws.onmessage = function (event) {
     checkedAssets = {};
     assetsToAccept = [];

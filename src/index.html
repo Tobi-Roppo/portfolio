@@ -124,24 +124,75 @@
       </div>
       <div class="content">
         <div id="cards">
-  <div class="card">
-    <div class="card-content">
-      <div class="card-image">
-        <img src="img/html.png">
+
+          <!-- Modal for html -->
+          <div class="modal" id="htmlModal">
+            <div class="modal-content">
+              <span class="close" onclick="closeModal('htmlModal')">&times;</span>
+              <img src="img/htmlcert.png" alt="HTML Certificate">
+            </div>
+          </div>
+          
+          <!-- Modal for CSS -->
+          <div class="modal" id="cssModal">
+            <div class="modal-content">
+              <span class="close" onclick="closeModal('cssModal')">&times;</span>
+              <img src="img/csscert.png" alt="CSS Certificate">
+            </div>
+          </div>
+
+          <!-- Modal for js -->
+          <div class="modal" id="jsModal">
+            <div class="modal-content">
+              <span class="close" onclick="closeModal('jsModal')">&times;</span>
+              <img src="img/csscert.png" alt="CSS Certificate">
+            </div>
+          </div>
+
+          <!-- Modal for photoshop -->
+          <div class="modal" id="psModal">
+            <div class="modal-content">
+              <span class="close" onclick="closeModal('psModal')">&times;</span>
+              <img src="img/csscert.png" alt="CSS Certificate">
+            </div>
+          </div>
+
+          <!-- Modal for react -->
+          <div class="modal" id="reactModal">
+            <div class="modal-content">
+              <span class="close" onclick="closeModal('reactModal')">&times;</span>
+              <img src="img/csscert.png" alt="CSS Certificate">
+            </div>
+          </div>
+
+          <!-- Modal for wordpress -->
+          <div class="modal" id="wordpressModal">
+            <div class="modal-content">
+              <span class="close" onclick="closeModal('wordpressModal')">&times;</span>
+              <img src="img/csscert.png" alt="CSS Certificate">
+            </div>
+          </div>
+
+<!-- Card -->
+<div class="card" onclick="openModal('htmlModal')">
+  <div class="card-content">
+    <div class="card-image">
+      <img src="img/html.png">
+      <i class="fa-duotone fa-apartment"></i>
+    </div>
+    <div class="card-info-wrapper">
+      <div class="card-info">
         <i class="fa-duotone fa-apartment"></i>
-      </div>
-      <div class="card-info-wrapper">
-        <div class="card-info">
-          <i class="fa-duotone fa-apartment"></i>
-          <div class="card-info-title">
-            <h3>HTML</h3>  
-            <h4>SoloLearn</h4>
-          </div>    
+        <div class="card-info-title">
+          <h3>HTML</h3>
+          <h4>SoloLearn</h4>
         </div>
       </div>
     </div>
   </div>
-  <div class="card">
+</div>
+
+  <div class="card" onclick="openModal('cssModal')">
     <div class="card-content">
       <div class="card-image">
         <img src="img/css.png">
@@ -158,7 +209,7 @@
       </div>
     </div>
   </div>
-  <div class="card">
+  <div class="card" onclick="openModal('jsModal')">
     <div class="card-content">
       <div class="card-image">
         <img src="img/js.png">
@@ -175,7 +226,7 @@
       </div>
     </div>
   </div>
-  <div class="card">
+  <div class="card" onclick="openModal('psModal')">
     <div class="card-content">
       <div class="card-image">
         <img src="img/photoshop.png">
@@ -192,7 +243,7 @@
       </div>
     </div>
   </div>
-  <div class="card">
+  <div class="card" onclick="openModal('reactModal')">
     <div class="card-content">
       <div class="card-image">
         <img src="img/react.png">
@@ -209,7 +260,7 @@
       </div>
     </div>
   </div>
-  <div class="card">
+  <div class="card" onclick="openModal('worpressModal')">
     <div class="card-content">
       <div class="card-image">
         <img src="img/social.png">
@@ -238,19 +289,19 @@
       <div class="content">
         <p>Here are my skills to represent my expertise</p>
         <div class="skill">
-          <li><h3>HTML</h3>
+          <li><h3>HTML - 90%</h3>
             <span class="bar"><span class="html"></span></span>
           </li>
-          <li><h3>CSS</h3>
+          <li><h3>CSS - 80%</h3>
             <span class="bar"><span class="css"></span></span>
             </li>
-          <li><h3>JavaScript</h3>
+          <li><h3>JavaScript - 60%</h3>
             <span class="bar"><span class="javascript"></span></span>
           </li>
-          <li><h3>WordPress</h3>
+          <li><h3>WordPress - 50%</h3>
             <span class="bar"><span class="wordpress"></span></span>
             </li>
-          <li><h3>React</h3>
+          <li><h3>React - 40%</h3>
               <span class="bar"><span class="react"></span></span>
               </li>
         </div>
@@ -296,13 +347,21 @@
         </h2>
       </div>
       <div class="content">
-        <p>
-          An old grave hidden away at the foot of a deserted hill, Overrun with
-          rank weeds growing unchecked year after year; There is no one left to
-          tend the tomb, And only an occasional woodcutter passes by. Once I was
-          his pupil, a youth with shaggy hair, Learning deeply from him by the
-          Narrow River.
-        </p>
+        <div class="container">
+          <a class="button" href="#popup">Open Modal</a>
+          <div class="popup" id="popup">
+            <div class="popup-inner">
+              <div class="popup__photo">
+                <img src="https://images.unsplash.com/photo-1515224526905-51c7d77c7bb8?ixlib=rb-0.3.5&s=9980646201037d28700d826b1bd096c4&auto=format&fit=crop&w=700&q=80" alt="">
+              </div>
+              <div class="popup__text">
+                <h1>Lorem ipsum dolor sit amet</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer ex velit, viverra non vulputate vitae, blandit vitae nisl. Nullam fermentum orci et erat viverra bibendum. Aliquam sed varius nibh, vitae mattis purus. Mauris elementum sapien non ullamcorper vulputate. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Sed eget felis sit amet eros viverra pulvinar.</p>
+              </div>
+              <a class="popup__close" href="#">X</a>
+            </div>
+          </div>
+        </div>
       </div>
       <div class="content">
         <h2 class="content__title" data-splitting data-effect8>
@@ -434,6 +493,40 @@
         <p><a class="line" href="index2.html">View more effects</a></p>
       </div>
     </main>
+    <script>
+      // JavaScript for Modal
+var modal = document.getElementById('myModal');
+var card = document.querySelector('.card');
+var closeBtn = document.querySelector('.close');
+
+// Open the modal when the card is clicked
+card.addEventListener('click', function() {
+  modal.style.display = 'block';
+});
+
+// Close the modal when the close button is clicked
+closeBtn.addEventListener('click', function() {
+  modal.style.display = 'none';
+});
+
+// Close the modal when the user clicks anywhere outside the modal content
+window.addEventListener('click', function(event) {
+  if (event.target == modal) {
+    modal.style.display = 'none';
+  }
+});
+
+function openModal(modalId) {
+  var modal = document.getElementById(modalId);
+  modal.style.display = 'block';
+}
+
+function closeModal(modalId) {
+  var modal = document.getElementById(modalId);
+  modal.style.display = 'none';
+}
+
+    </script>
     <script src="https://tympanus.net/codrops/adpacks/cda_sponsor.js"></script>
     <script type="module" src="js/index.js"></script>
   </body>

@@ -664,3 +664,24 @@ document
   .addEventListener("click", function () {
     document.querySelector(".popup").classList.remove("active");
   });
+
+var modal = document.getElementById("myModal");
+var card = document.querySelector(".card");
+var closeBtn = document.querySelector(".close");
+
+// Open the modal when the card is clicked
+card.addEventListener("click", function () {
+  modal.style.display = "block";
+});
+
+// Close the modal when the close button is clicked
+closeBtn.addEventListener("click", function () {
+  modal.style.display = "none";
+});
+
+// Close the modal when the user clicks anywhere outside the modal content
+window.addEventListener("click", function (event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+});

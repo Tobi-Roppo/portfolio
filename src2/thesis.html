@@ -50,7 +50,9 @@
           <header class="content__header">
             <div class="content__meta">
               <span class="content__meta-number"></span>
-              <span class="content__meta-title">Rice Insect Detector</span>
+              <span class="content__meta-title"
+                >IoT-Based Rice Pest Insect Detector</span
+              >
             </div>
             <h2
               data-scroll
@@ -88,64 +90,72 @@
             </div>
           </header>
           <div class="content__body">
-            <p class="content__body-para text-right cell--1-2">
-              Then they opened the firmaments and the Light descended below to
-              the lower regions and to those who were without form, having no
-              true likeness. It was thus that they got the likeness of the Light
-              for themselves. Some rejoiced because the Light had come to them,
-              and that they had been made rich thereby. Others mourned because
-              they were made poor and that which they thought they had was taken
-              away from them. Thus came He, who went forth full of grace, and
-              was taken captive with a captivity. A light of glory was given to
-              the æons who had received the Spark, and guardian spirits were
-              sent to them who are Gamanêl, Etrempsouchos, and Agramas, and
-              those who are with them. They bring help to those who have
-              believed in the Spark of Light.
+            <p class="content__body-para cell--1-2">
+              Rice, a critical global crop, faces constant threats from insect
+              pests, leading to substantial yield losses and economic impact.
+              Pest control strategies rely on precise timing and monitoring,
+              with artificial light traps proving valuable. Pesticide spraying,
+              though common, demands caution during early plant growth due to
+              toxicity. Accurate insect identification is vital for effective
+              control. The study introduces an innovative stationary pest
+              infestation monitoring device using Convolutional Neural Network
+              and Raspberry Pi, achieving 78.4% accuracy but highlighting the
+              need for further refinement.
             </p>
-            <p
-              data-scroll
-              data-scroll-offset="130"
-              class="content__body-para cell--3 anim-show"
-            >
-              <strong>The Crown that the Deathless pray for</strong>
-            </p>
+
             <div class="content__body-imgwrap cell--1-3">
               <div
                 data-scroll
                 data-scroll-speed="0.7"
                 data-scroll-delay="0.1"
                 class="content__body-image"
-                style="background-image: url(img/2.jpg)"
+                style="background-image: url(img/video.gif)"
               ></div>
             </div>
             <p class="content__body-para cell--2-3">
-              Now in the Space of the Indivisible Atom are twelve Founts, above
-              which are the twelve Paternities who surround the Indivisible
-              [Queen] like Deeps or like Skies and make for Her a crown in which
-              is every kind of life: all modes of Triple-powered life, of
-              Uncontainable life, of Infinite life, of Ineffable life, of Silent
-              life, of Unknown life, of Solitary life, of Unshakable life, of
-              First-manifested life, of Self-born life, of True life. All is
-              therein. Every species is in it, all Gnôses and every power which
-              has received the Light, yea, all Mind manifests itself therein.
-              This is the Crown which the Father of the Universe has placed upon
-              the Indivisible [Queen] with three hundred and sixty-five kinds in
-              it, brilliant and filling the Universe with an incorruptible and
-              unfailing light.
+              We developed an IoT-based system using a Raspberry Pi and a Pi cam
+              to detect and classify rice adult-flying stage insects. The
+              platform was designed with a focus on real-time monitoring, and
+              the researchers used Roboflow for data labeling, data
+              pre-processing, and data augmentation. We chose the YOLOv5
+              architecture for insect detection and classification, which
+              involved training the model on a dataset of approximately 1140
+              labeled images. The platform successfully detected and classified
+              insects in real-time and saved the results in JSON format. A
+              user-friendly desktop app was created to display the data. Testing
+              showed an impressive accuracy rate of 94.3%, with user and
+              producer accuracy metrics, demonstrating the model's
+              effectiveness. Furthermore, the study compared its results with a
+              previous research effort by Cubillas et al. (2020), showcasing
+              superior performance.
+            </p>
+
+            <h2>Training Results</h2>
+            <div class="content__body-imgwrap cell--1-3">
+              <div
+                data-scroll
+                data-scroll-speed="0.7"
+                data-scroll-delay="0.1"
+                class="content__body-image"
+                style="background-image: url(img/results.png)"
+              ></div>
+            </div>
+
+            <p class="content__body-para cell--1-2">
+              We successfully developed a platform for real-time insect
+              detection and classification using the YOLOv5 model. The
+              platform's design and capabilities were thoroughly discussed, and
+              it was demonstrated that the system could accurately identify and
+              categorize insects. The accuracy of the YOLOv5 model was measured
+              using various metrics, resulting in an impressive overall accuracy
+              rate of 94.3%. The study also compared its accuracy with a
+              previous research effort, showcasing its superior performance.
+              Overall, Chapter 4 highlighted the successful implementation and
+              effectiveness of the developed system in insect monitoring for
+              rice fields.
             </p>
           </div>
-          <footer class="content__footer content__breakout">
-            <div class="inner inner--grid">
-              <a
-                class="content__footer-copyright"
-                href="https://www.twitter.com/codrops"
-                >© Codrops 2020</a
-              >
-              <a data-scroll class="content__footer-next anim-show"
-                >Next Project</a
-              >
-            </div>
-          </footer>
+          <footer class="content__footer content__breakout"></footer>
         </div>
       </section>
       <section class="thumbs">
